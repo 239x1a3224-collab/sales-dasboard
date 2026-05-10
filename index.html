@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Analytics Dashboard</title>
+    <meta name="description" content="A modern sales analytics dashboard displaying key performance metrics and trends.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>Sales Analytics Dashboard</h1>
+            <p>Real-time insights and performance metrics</p>
+        </header>
+        
+        <main class="charts-grid">
+            <div class="chart-card">
+                <h2>Monthly Sales</h2>
+                <div class="chart-wrapper">
+                    <canvas id="monthlySalesChart"></canvas>
+                </div>
+            </div>
+            
+            <div class="chart-card">
+                <h2>Revenue Trends</h2>
+                <div class="chart-wrapper">
+                    <canvas id="revenueTrendsChart"></canvas>
+                </div>
+            </div>
+            
+            <div class="chart-card">
+                <h2>Product Categories</h2>
+                <div class="chart-wrapper">
+                    <canvas id="productCategoriesChart"></canvas>
+                </div>
+            </div>
+            
+            <div class="chart-card">
+                <h2>Regional Sales</h2>
+                <div class="chart-wrapper">
+                    <canvas id="regionalSalesChart"></canvas>
+                </div>
+            </div>
+            
+            <div class="chart-card radar-card">
+                <h2>Team Performance</h2>
+                <div class="chart-wrapper">
+                    <canvas id="teamPerformanceChart"></canvas>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
